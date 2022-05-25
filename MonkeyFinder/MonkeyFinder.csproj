@@ -53,4 +53,8 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <PackageReference Update="System.Text.Json" Version="6.0.4" />
+	</ItemGroup>
+
 </Project>
