@@ -6,9 +6,25 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5986429C-EEE9-4B85-8A01-7A5407BDE1F0}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		Directory.build.props = Directory.build.props
+		Directory.build.targets = Directory.build.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeyFinder", "MonkeyFinder\MonkeyFinder.csproj", "{2571D951-A388-4AA8-A2C6-DCF1F72ECD82}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2571D951-A388-4AA8-A2C6-DCF1F72ECD82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2571D951-A388-4AA8-A2C6-DCF1F72ECD82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2571D951-A388-4AA8-A2C6-DCF1F72ECD82}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2571D951-A388-4AA8-A2C6-DCF1F72ECD82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2571D951-A388-4AA8-A2C6-DCF1F72ECD82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2571D951-A388-4AA8-A2C6-DCF1F72ECD82}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
