@@ -4,21 +4,15 @@ public static class MauiProgram
 {
     public static MauiApp CreateMauiApp()
     {
-        var builder = MauiApp.CreateBuilder();
-        builder
+        var builder = MauiApp.CreateBuilder()
             .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
+            .ConfigureFonts(fonts => fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular"));
 
-        var services = builder.Services;
-
-        services.AddSingleton<HttpClient>();
-
-        services.AddSingleton<MonkeyService>();
-        services.AddSingleton<MonkeysViewModel>();
-        services.AddSingleton<MainPage>();
+        var services = builder.Services
+            .AddSingleton<HttpClient>()
+            .AddSingleton<MonkeyService>()
+            .AddSingleton<MonkeysViewModel>()
+            .AddSingleton<MainPage>();
 
         return builder.Build();
     }

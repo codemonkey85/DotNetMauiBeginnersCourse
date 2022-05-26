@@ -30,7 +30,7 @@
 		<RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
 		<CodesignKey>Apple Development: Michael Bond (JFM79P3LQP)</CodesignKey>
 		<CodesignProvision>MonkeyFinder</CodesignProvision>
-		<ArchiveOnBuild>true</ArchiveOnBuild>
+		<!--<ArchiveOnBuild>true</ArchiveOnBuild>-->
 		<TcpPort>58181</TcpPort>
 	</PropertyGroup>
 
