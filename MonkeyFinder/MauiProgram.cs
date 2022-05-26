@@ -11,8 +11,12 @@ public static class MauiProgram
         var services = builder.Services
             .AddSingleton<HttpClient>()
             .AddSingleton<MonkeyService>()
+
             .AddSingleton<MonkeysViewModel>()
-            .AddSingleton<MainPage>();
+            .AddTransient<MonkeyDetailsViewModel>()
+
+            .AddSingleton<MainPage>()
+            .AddTransient<DetailsPage>();
 
         return builder.Build();
     }

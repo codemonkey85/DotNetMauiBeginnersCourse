@@ -1,5 +1,10 @@
 ﻿namespace MonkeyFinder.ViewModel;
 
-public class MonkeyDetailsViewModel : BaseViewModel
+[QueryProperty("Monkey", "Monkey")]
+public partial class MonkeyDetailsViewModel : BaseViewModel
 {
+    [ObservableProperty]
+    private Monkey monkey;
+
+    public MonkeyDetailsViewModel(Monkey monkey) => this.monkey = monkey;
 }
