@@ -6,4 +6,7 @@
              x:Class="MonkeyFinder.DetailsPage"
              Title="{Binding Monkey.Name}">
 
+    <Label Text="{Binding Monkey.Name}" 
+           FontSize="25" />
+
 </ContentPage>
