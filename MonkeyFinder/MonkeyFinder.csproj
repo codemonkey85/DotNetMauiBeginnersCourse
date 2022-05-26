@@ -15,7 +15,7 @@
 		<ApplicationTitle>MonkeyFinder</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.monkeyfinder</ApplicationId>
+		<ApplicationId>com.codemonkey85.monkeyfinder</ApplicationId>
 		<ApplicationIdGuid>6D2035AE-275A-40F7-A002-39F556CFF67D</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -24,6 +24,14 @@
 
 		<!-- Required for C# Hot Reload -->
 		<UseInterpreter Condition="'$(Configuration)' == 'Debug'">True</UseInterpreter>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="$(TargetFramework.Contains('-ios'))">
+		<RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
+		<CodesignKey>Apple Development: Michael Bond (JFM79P3LQP)</CodesignKey>
+		<CodesignProvision>MonkeyFinder</CodesignProvision>
+		<ArchiveOnBuild>true</ArchiveOnBuild>
+		<TcpPort>58181</TcpPort>
 	</PropertyGroup>
 
 	<ItemGroup>

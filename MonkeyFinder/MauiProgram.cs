@@ -12,7 +12,13 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
             });
 
-        builder.Services.AddSingleton<MainPage>();
+        var services = builder.Services;
+
+        services.AddSingleton<HttpClient>();
+
+        services.AddSingleton<MonkeyService>();
+        services.AddSingleton<MonkeysViewModel>();
+        services.AddSingleton<MainPage>();
 
         return builder.Build();
     }
