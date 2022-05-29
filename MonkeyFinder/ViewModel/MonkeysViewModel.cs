@@ -17,6 +17,9 @@ public partial class MonkeysViewModel : BaseViewModel
     private readonly IConnectivity connectivity;
     private readonly IGeolocation geolocation;
 
+    [ObservableProperty]
+    private bool isRefreshing;
+
     [ICommand]
     private async Task GetMonkeysAsync()
     {
@@ -51,6 +54,7 @@ public partial class MonkeysViewModel : BaseViewModel
         finally
         {
             IsBusy = false;
+            IsRefreshing = false;
         }
     }
 
