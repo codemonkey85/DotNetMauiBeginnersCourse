@@ -9,6 +9,10 @@ public static class MauiProgram
             .ConfigureFonts(fonts => fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular"));
 
         var services = builder.Services
+            .AddSingleton(Connectivity.Current)
+            .AddSingleton(Geolocation.Default)
+            .AddSingleton(Map.Default)
+
             .AddSingleton<HttpClient>()
             .AddSingleton<MonkeyService>()
 

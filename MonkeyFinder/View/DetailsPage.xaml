@@ -36,8 +36,15 @@
                            Source="{Binding Monkey.Image}" />
 
                 </Frame>
-                
+
             </Grid>
+
+            <Button Text="Show on Map" 
+                    Command="{Binding OpenMapCommand}"
+                    HorizontalOptions="Center" 
+                    WidthRequest="200"
+                    Margin="8"
+                    Style="{StaticResource ButtonOutline}" />
 
             <VerticalStackLayout Padding="10" Spacing="10">
 
@@ -49,7 +56,7 @@
                        Style="{StaticResource SmallLabel}" />
 
             </VerticalStackLayout>
-            
+
         </VerticalStackLayout>
 
     </ScrollView>
