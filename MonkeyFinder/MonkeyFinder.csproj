@@ -62,7 +62,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Update="System.Text.Json" Version="6.0.4" />
+	  <PackageReference Update="System.Text.Json" Version="6.0.5" />
 	</ItemGroup>
 
 </Project>
