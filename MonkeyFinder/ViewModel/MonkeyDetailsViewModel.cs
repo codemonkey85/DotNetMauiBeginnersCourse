@@ -10,10 +10,10 @@ public partial class MonkeyDetailsViewModel : BaseViewModel
 
     public IMap map { get; }
 
-    [ICommand]
+    [RelayCommand]
     private async Task GoBackAsync() => await Shell.Current.GoToAsync("..");
 
-    [ICommand]
+    [RelayCommand]
     private async Task OpenMapAsync()
     {
         try

@@ -8,7 +8,7 @@ public static class MauiProgram
             .UseMauiApp<App>()
             .ConfigureFonts(fonts => fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular"));
 
-        var services = builder.Services
+        builder.Services
             .AddSingleton(Connectivity.Current)
             .AddSingleton(Geolocation.Default)
             .AddSingleton(Map.Default)

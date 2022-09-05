@@ -6,7 +6,7 @@ public partial class BaseViewModel : ObservableObject
     private string title;
 
     [ObservableProperty]
-    [AlsoNotifyChangeFor(nameof(IsNotBusy))]
+    [NotifyPropertyChangedFor(nameof(IsNotBusy))]
     private bool isBusy;
 
     public bool IsNotBusy => !IsBusy;
