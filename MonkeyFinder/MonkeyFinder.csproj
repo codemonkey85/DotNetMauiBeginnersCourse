@@ -54,8 +54,8 @@
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
-		<PackageReference Update="Microsoft.Maui.Controls" Version="8.0.0-rc.2.9511" />
-		<PackageReference Update="Microsoft.Maui.Controls.Compatibility" Version="8.0.0-rc.2.9511" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.3" />
+		<PackageReference Update="Microsoft.Maui.Controls.Compatibility" Version="8.0.3" />
 	</ItemGroup>
 
 	<ItemGroup>
